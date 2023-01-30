@@ -1,0 +1,15 @@
+config-version: 2
+version: 2
+sources:
+  - name: tap_csv
+    schema: raw_data
+    meta:
+      external_location: "{{ env_var('MELTANO_PROJECT_ROOT') }}/data/data_catalog/psa/{identifier}/*.parquet"
+    tables:
+      - name: customers
+        identifier: customers
+        description: The raw listing of all customers.
+      - name: orders
+        description: The raw listing of all customer orders.
+      - name: payments
+        description: The raw listing of all customer payments.
