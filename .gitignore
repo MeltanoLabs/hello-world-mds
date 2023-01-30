@@ -1,8 +1,11 @@
 /venv
 /.meltano
 .env
-/transform/dbt_packages
 /transform/.tmp
+/transform/dbt_modules
+/transform/dbt_packages
+/transform/target
+/transform/logs
 /docs/run
 /data/data_catalog
 /output
