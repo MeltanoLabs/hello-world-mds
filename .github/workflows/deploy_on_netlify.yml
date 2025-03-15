@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Check out
-        uses: actions/checkout@master
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           python-version: '3.9'
 
@@ -44,7 +44,7 @@ jobs:
           cp -r analyze/build/* /home/runner/work/_temp/_github_home/build
 
       - name: Deploy Netlify
-        uses: danakim/gh-action-deploy-netlify@master
+        uses: danakim/gh-action-deploy-netlify@6bba1ae1ff4b8ef82eb37a7b6a3c5352c3535a05 # v1
         with:
           AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
